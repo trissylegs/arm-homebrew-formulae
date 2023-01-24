@@ -18,7 +18,7 @@ class ArmNoneEabiGcc < Formula
     end
   end
 
-  def install-
+  def install
     (prefix/"gcc").install Dir["./*"]
     Dir.glob(prefix/"gcc/bin/*") { |file| bin.install_symlink file }
   end
